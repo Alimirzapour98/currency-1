@@ -1,0 +1,212 @@
+body {
+    background-color: #fffefe !important; /* Ejbaran background safid */
+    background-image: url('https://images.unsplash.com/photo-1623911380012-0b6db3fcad54?q=80&w=3086&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Tasvir background */
+    background-size: cover; /* Keshidan tasvir baraye por kardan safhe */
+    background-repeat: no-repeat; /* Tazakar nashodane tasvir */
+    background-position: center; /* Marakez kardan tasvir */
+    margin: 0; /* Pak kardane margin default */
+    padding: 0; /* Pak kardane padding default */
+    height: 100vh; /* Height tamam safhe */
+    width: 100%; /* Arz tamam safhe */
+}
+
+h1 {
+    color: #fbfbfb;
+    text-align: center;
+}
+
+button {
+    background-color: #09270f; /* Background sabz */
+    color: white; /* Matn sefid */
+    border: none; /* Hade dokme ro pak mikonim */
+    border-radius: 50%; /* Dairi kardan dokme */
+    padding: 15px 30px; /* Andazeh dokme bozorgtar */
+    cursor: pointer; /* Mouse pointer taghir mikone roye dokme */
+    font-size: 18px; /* Andazeh matn dokme */
+    transition: all 0.3s ease; /* Hover transition smooth */
+}
+
+button:hover {
+    
+    transform: scale(1.1); /* Dokme baraye hover bozorgtar mishavad */
+}
+
+.background-ali {
+    text-align: center;
+    background: #09270f; /* Background rang */
+    border: 2px solid #fff; /* Hade sefid baraye chahar maghtae */
+    border-radius: 20px; /* Goshe haye gerde */
+    width: 15%; /* Arz mostatil (mesal: 80% az arz safhe) */
+    padding: 30px; /* Fazeye dakheli baraye matn */
+    position: absolute; /* Position motlagh baraye ja-dehi */
+    top: 20px; /* Faseleh az bala */
+    left: 50%; /* Marakez kardan dar arz */
+    transform: translateX(-50%); /* Movafigh sazi markaz */
+    transition: none; /* Transition ro be none tabdil mikonim */
+   
+}
+
+.background-ali:hover {
+    /* Hame hover taghirat ro khali bezar ya pak kon */
+}
+
+.text-ali {
+    color: #fff;
+    padding: 2rem;
+}
+
+.title-ali {
+    color: #fff9f9;
+    font-size: 48px;
+}
+
+
+
+
+html, body {
+    margin: 0; /* Margin ha ro pak konid */
+    padding: 0; /* Padding ha ro pak konid */
+    height: 100%; /* Ertefa be hameye safhe */
+    display: flex; /* Flexbox baraye markaz kardan element */
+    justify-content: center; /* Element ro dar arz markaz mikone */
+    align-items: center; /* Element ro dar ertefa markaz mikone */
+    overflow: hidden; /* Az scroll shodan safhe jologiri mikone */
+}
+
+.home-page {
+    background-image: url('https://images.unsplash.com/photo-1589556763393-59ab0f56b811?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 300px; /* Arz element */
+    height: 300px; /* Ertefa element */
+    border-radius: 10px; /* Goshe haye gerde (optional) */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.dokmeye-feshar {
+    background-color: #0a0a0a;
+    color: white;
+    border: none;
+    width: 150px;
+    height: 155px;
+    border-radius: 50%;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dokmeye-feshar:hover {
+    background-color: #000000;
+    transform: scale(1.09);
+}
+.creator-ali {
+    position: fixed; /* Sabit kardan makan */
+    bottom: 10px; /* Faseleh az payin */
+    right: 10px; /* Faseleh az samte rast */
+    color: #000; /* Rang matn siyah */
+    font-size: 14px; /* Andazeh matn */
+    background-color: #f5f5f5; /* Background khakestari roshan */
+    padding: 5px 10px; /* Fazaye dakheli */
+    border-radius: 5px; /* Goshe haye gerde */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow baraye shik shodan */
+}
+#result {
+    text-align: center;
+    margin-top: 200px;
+    color: #38ab3a;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+input {
+    font-size: 18px;  /* Andazeh font bozorgtar */
+    padding: 10px;    /* Fazaye dakheli bozorgtar */
+    width: 250px;     /* Arze input box ro bozorgtar mikonim */
+    border-radius: 5px;  /* Goshe haye gerde */
+    border: 2px solid #ccc;  /* Hade khafi ro zakhire mikonim */
+    margin: 10px 0;    /* Faseleh az bala o payin */
+}
+
+input:focus {
+    outline: none;  /* Outline ro hazf mikonim */
+    border-color: #09270f;  /* Rang hade focus */
+}
+
+select {
+    font-size: 15px;  /* Andazeh font bozorgtar */
+    padding: 10px;    /* Fazaye dakheli bozorgtar */
+    width: 100px;     /* Arze select box ro bozorgtar mikonim */
+    border-radius: 10px;  /* Goshe haye gerde */
+    border: 2px solid #ccc;  /* Hade khafi ro zakhire mikonim */
+    margin: 10px 0;    /* Faseleh az bala o payin */
+}
+
+select:focus {
+    outline: none;  /* Outline ro hazf mikonim */
+    border-color: #09270f;  /* Rang hade focus */
+}
+.result-container {
+    background-color: #f5f5f5;  /* Background rang sabz */
+    position: fixed; /* Sabit kardan makan */
+    color: #000;  /* Rang matn sefid */
+    padding: 15px;  /* Padding barayeh khali kardan ghesmat daroon */
+    width: 80%;  /* Arz kadre khod */
+    text-align: center;  /* Markaz kardan matn */
+    border-radius: 10px;  /* Goshe haye gerde */
+    box-shadow:  0 2px 4px rgba(0, 0, 0, 0.2);  /* Shadow khandidan */
+    font-size: 24px;  /* Andazeh matn */
+    font-weight: bold;  /* Bold kardan matn */
+}
+
+/* Default Styles (Desktop) */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+select, input, button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* For Tablets (Screen Width 768px and up) */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    
+    select, input, button {
+        font-size: 14px;
+    }
+}
+
+/* For Mobile (Screen Width 480px and up) */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    select, input, button {
+        font-size: 12px;
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+
+    .background-ali {
+        width: 100%;
+        height: 100%;
+    }
+}
