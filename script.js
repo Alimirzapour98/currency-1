@@ -6,6 +6,7 @@ async function convertCurrency() {
 
     if (!amount || amount <= 0) {
         resultElement.innerText = "Please enter a valid amount.";
+        resultElement.style.display = "block"; // Show result container
         return;
     }
 
@@ -18,8 +19,10 @@ async function convertCurrency() {
         const convertedAmount = (amount * rate).toFixed(2);
 
         resultElement.innerText = `${amount} ${fromCurrency} = ${convertedAmount} ${toCurrency}`;
+        resultElement.style.display = "block";  // Show result container
     } catch (error) {
         resultElement.innerText = "Error fetching conversion rates. Try again later.";
         console.error(error);
+        resultElement.style.display = "block";  // Show result even on error
     }
 }

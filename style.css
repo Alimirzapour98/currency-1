@@ -35,8 +35,9 @@ button:hover {
     text-align: center;
     background: #09270f; /* Background rang */
     border: 2px solid #fff; /* Hade sefid baraye chahar maghtae */
-    border-radius: 20px; /* Goshe haye gerde */
-    width: 15%; /* Arz mostatil (mesal: 80% az arz safhe) */
+    border-radius: 50%; /* Goshe haye gerde */
+    width: 200px;
+    height: 200px;
     padding: 30px; /* Fazeye dakheli baraye matn */
     position: absolute; /* Position motlagh baraye ja-dehi */
     top: 20px; /* Faseleh az bala */
@@ -120,13 +121,6 @@ html, body {
     border-radius: 5px; /* Goshe haye gerde */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow baraye shik shodan */
 }
-#result {
-    text-align: center;
-    margin-top: 200px;
-    color: #34669b;
-    font-size: 24px;
-    font-weight: bold;
-}
 
 input {
     font-size: 18px;  /* Andazeh font bozorgtar */
@@ -156,46 +150,62 @@ select:focus {
     border-color: #09270f;  /* Rang hade focus */
 }
 .result-container {
-    background-color: #f5f5f5;  /* Background rang sabz */
-    position: fixed; /* Sabit kardan makan */
-    color: #000;  /* Rang matn sefid */
-    padding: 15px;  /* Padding barayeh khali kardan ghesmat daroon */
-    width: 80%;  /* Arz kadre khod */
-    text-align: center;  /* Markaz kardan matn */
-    border-radius: 10px;  /* Goshe haye gerde */
-    box-shadow:  0 2px 4px rgba(0, 0, 0, 0.2);  /* Shadow khandidan */
-    font-size: 24px;  /* Andazeh matn */
-    font-weight: bold;  /* Bold kardan matn */
-}
-/* Desktop (default) */
-body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
+    background-color: #f5f5f5;
+    position: fixed;
+    color: #000;
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow:  0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    font-weight: bold;
+    display: none;  /* initial hidden */
 }
 
-/* Tablet */
+#result {
+    text-align: center;
+    margin-top: 200px;
+    color: #34669b;
+    font-size: 24px;
+    font-weight: bold;
+}
+/* For Tablets */
 @media (max-width: 768px) {
     body {
         padding: 15px;
     }
 
+    .container {
+        width: 80%;
+    }
+
     h1 {
-        font-size: 20px;
+        font-size: 24px;
+    }
+
+    button {
+        width: 90%;
+        padding: 12px;
     }
 }
 
-/* Mobile */
+/* For Mobile */
 @media (max-width: 480px) {
     body {
         padding: 10px;
     }
 
-    h1 {
-        font-size: 16px;
-    }
-
     .container {
         width: 100%;
-        text-align: center;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
     }
 }
