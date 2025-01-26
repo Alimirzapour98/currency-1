@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تبدیل ارز</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="background-ali">
+      <h1 class="title-ali">تبدیل ارز</h1>
+      <p class="text-ali">لطفا مقدار ارز مورد نظر خود را وارد کنید.</p>
+    </div>
+    <div class="creator-ali">
+      Created by ALI MIRZAPOUR
+    </div>
+    <div>
+      <!-- index.html -->
+<input type="number" id="amount" placeholder="مبلغ" />
+<select id="fromCurrency">
+    <option value="USD"> دلار آمریکا</option>
+    <option value="EUR">یورو</option>
+    <option value="GBP">پوند بریتانیا</option>
+    <option value="IRR">ریال ایران</option>
+    <option value="TRY">لیر ترکیه</option>
+    <option value="AUD">دلار استرالیا</option>
+    <option value="CAD">دلار کانادا</option>
+    <option value="JPY">ین ژاپن</option>
+    <option value="INR">روپیه هند</option>
+    <option value="CHF">فرانک سوئیس</option>
+    <option value="CNY">یوان چین</option>
+    <option value="AED" >درهم امارات </option>
+    <option value="AZN" >منات آذربایجان </option>
+    <option value="AFN" >افغانی </option>
+
+
+</select>
+
+<select id="toCurrency">
+    <option value="IRR">ریال ایران</option>
+    <option value="USD">دلار آمریکا</option>
+    <option value="EUR">یورو</option>
+    <option value="GBP">پوند بریتانیا</option>
+    <option value="TRY">لیر ترکیه</option>
+    <option value="AUD">دلار استرالیا</option>
+    <option value="CAD">دلار کانادا</option>
+    <option value="JPY">ین ژاپن</option>
+    <option value="INR">روپیه هند</option>
+    <option value="CHF">فرانک سوئیس</option>
+    <option value="CNY">یوان چین</option>
+    <option value="AED" >درهم امارات </option>
+    <option value="AZN" >منات آذربایجان </option>
+    <option value="AFN" >افغانی </option>
+    
+
+</select>
+
+<button onclick="convertCurrency()">تبدیل</button>
+    </div>
+    
+    <h2 id="result" class="result-container"></h2>
+    <script src="script.js"></script>
+  </body>
+</html>
