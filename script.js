@@ -5,24 +5,30 @@ async function convertCurrency() {
     const resultElement = document.getElementById("result");
 
     if (!amount || amount <= 0) {
-        resultElement.innerText = "Please enter a valid amount.";
-        resultElement.style.display = "block"; // Show result container
+        resultElement.innerText = "لطفا مبلغ معتبر وارد کنید.";
+        resultElement.style.display = "block"; // نمایش نتیجه
         return;
     }
 
     try {
         const response = await fetch(`https://api.exchangerate-api.com/v4/latest/${fromCurrency}`);
-        if (!response.ok) throw new Error("Failed to fetch exchange rates.");
+        if (!response.ok) throw new Error("دریافت نرخ ارز با مشکل مواجه شد.");
         
         const data = await response.json();
         const rate = data.rates[toCurrency];
         const convertedAmount = (amount * rate).toFixed(2);
 
-        resultElement.innerText = `${amount} ${fromCurrency} = ${convertedAmount} ${toCurrency}`;
-        resultElement.style.display = "block";  // Show result container
+        // افزودن رنگ‌های متفاوت به مقادیر و کد ارز
+        resultElement.innerHTML = `
+        
+            <span class="currency-code"> ${fromCurrency} ${amount} </span> =
+            <span class="currency-value">(${convertedAmount})</span>
+            <span class="currency-code">${toCurrency}</span>
+        `;
+        resultElement.style.display = "block"; // نمایش نتیجه
     } catch (error) {
-        resultElement.innerText = "Error fetching conversion rates. Try again later.";
+        resultElement.innerText = "خطا در دریافت نرخ ارز. لطفا دوباره تلاش کنید.";
         console.error(error);
-        resultElement.style.display = "block";  // Show result even on error
+        resultElement.style.display = "block"; // نمایش پیام خطا
     }
 }

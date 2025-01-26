@@ -166,7 +166,7 @@ select:focus {
 #result {
     text-align: center;
     margin-top: 200px;
-    color: #34669b;
+    color: #209541;
     font-size: 24px;
     font-weight: bold;
 }
@@ -208,4 +208,13 @@ select:focus {
         width: 100%;
         padding: 10px;
     }
+} 
+.currency-code {
+    color: #eb0909; /* رنگ کد ارز */
+    font-weight: bold; /* بولد کردن */
+}
+
+.currency-value {
+    color: #0b5a14; /* رنگ مقدار تبدیل‌شده */
+    font-weight: bold; /* بولد کردن */
 }
